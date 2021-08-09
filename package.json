@@ -11,10 +11,13 @@
     "chat",
     "socket.io"
   ],
-  "author": "Appknox <engineering@appknox.com>",
+  "author": "Gugan <guganssp@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^4.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }

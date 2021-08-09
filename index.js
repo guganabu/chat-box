@@ -1,11 +1,15 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const app = require("express")();
+// const httpServer = require("http").createServer(app);
+const options = { cors: {
+    origin: '*',
+  } };
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+ const server = app.listen(3000)
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+ const io = require("socket.io")(server, options)
+
+//  Initialize Socket 
+const Socket = require('./socket');
+const socket = new Socket(io);
+socket.init();
+
