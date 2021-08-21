@@ -1,22 +1,21 @@
 class Socket {
-
     constructor(io) {
-        this.io = io;
+        this.io = io
     }
 
     init() {
-        this.io.on("connection", (socket) => { 
-           console.log('connection established!')
+        this.io.on('connection', (socket) => {
+            console.log('connection established!')
 
-        //    private chat
+            //    private chat
             socket.on('private', (payload) => {
-                socket.broadcast.emit("private", {
+                socket.broadcast.emit('private', {
                     actor: 'broadcast',
-                    data: payload.data
-                });
+                    data: payload.data,
+                })
             })
-        });
+        })
     }
- }
+}
 
- module.exports = Socket;
+module.exports = Socket
