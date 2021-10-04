@@ -10,4 +10,8 @@ It contain NodeJS scripts to receive and emit socket messages
 
 `node index.js`
 
-PS: Chatbox can be accessed @ https://guganabu.github.io/chat-box-ui/
+# Front end repo
+https://github.com/guganabu/chat-box
+
+# Domain
+Chatbox can be accessed @ https://guganabu.github.io/chat-box-ui/
