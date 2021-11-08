@@ -15,3 +15,6 @@ https://github.com/guganabu/chat-box
 
 # Domain
 Chatbox can be accessed @ https://guganabu.github.io/chat-box-ui/
+
+#To demonstrate full fledged chat experience, try to open the URL in two different sessions.
+  Ex, open this URL in nomal & incognito modes.
